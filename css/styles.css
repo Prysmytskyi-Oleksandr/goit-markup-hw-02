@@ -1,12 +1,74 @@
-/* основной цвет #212121 */
-/* вторичный цвет #757575 */
+/* основной цвет #757575 */
+/* вторичный цвет #212121  */
 /* белый цвет #FFFFFF */
 /* прозначный rgba(255, 255, 255, 0.6); */
 /* акцент #2196F3 */
 /* вторичный фон #F5F4FA */
+/* фон героя #2F303A */
 
-body {background-color:#FFFFFF ;
-color: #757575;}
-.logo {
-    color: #212121;
+:root{
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --white-color:#FFFFFF
 }
+
+body {background-color:var(--white-color);
+color: var(--primary-text-color); font-family:Roboto, sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+/* header */
+/* Логотип */
+
+.logo {
+    color: #000000; font-family: Raleway, sans-serif;
+
+}
+
+.logo-accent{color:var(--accent-color) ;}
+
+/* Главная навигация */
+.site-nav .link {color:var(--title-text-color);
+
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+    }
+
+/* контакты */
+.header-contact .mailtel {color: var(--primary-text-color);}
+.mailtel:hover,
+.mailtel:focus {color: var(--accent-color);}
+
+/* main */
+/* фон героя */
+.hero{background-color: #2F303A;}
+
+/* шрифт заголовков */
+.hero-title{color: var(--white-color);
+
+
+Font size: 44px
+Line height: 60px
+Line height: 116%
+Align: Center
+Vertical align: Top
+Letter spacing: 6%
+}
+.section-title{color: var(--title-text-color)}
+
+/* Характеристика компании*/
+.properties-list .title{color: var(--title-text-color);}
+ /* Команда */
+ .team .team-title {color: var(--title-text-color);}
+
+ /* fotter */
+ .footer{background-color:#2F303A ;}
+ .logo-footer{color: var(--white-color); font-family: Raleway, sans-serif;}
+ .logo-footer-web{color:var(--accent-color) ;}
+
+ .address{color:var(--white-color); font-style: normal;}
+ 
+ .footer-mail, .footer-tel {color: rgba(255, 255, 255, 0.6); font-style: normal;}
