@@ -46,127 +46,131 @@
       <!--Portfolio-->
       <section>
         <!--Скрытыйзаголовок-->
-        <h1>Скрытый заголовок</h1>
+        <h1 class="hidden-title">Скрытый заголовок</h1>
 
         <!--Список кнопок навигации-->
-        <ul>
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайты</button></li>
-          <li><button type="button">Приложения</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+        <ul class="filtr">
+          <li><button type="button" class="category">Все</button></li>
+          <li><button type="button" class="category">Веб-сайты</button></li>
+          <li><button type="button" class="category">Приложения</button></li>
+          <li><button type="button" class="category">Дизайн</button></li>
+          <li><button type="button" class="category">Маркетинг</button></li>
         </ul>
 
         <!--Галерея-->
-        <ul>
+        <ul class="galery">
           <li>
             <a href="">
               <img
-                width="370px"
-                height="294px"
+                width="370"
+                height="294"
                 src="images/technocriak.jpg"
                 alt="Ноутбук"
               />
-              <h2>Технокряк</h2>
-              <p>Веб-сайт</p>
+              <h2 class="example">Технокряк</h2>
+              <p class="category-name">Веб-сайт</p>
             </a>
           </li>
           <li>
             <a href="">
               <img
-                width="370px"
-                height="294px"
+                width="370"
+                height="294"
                 src="images/poster.jpg"
                 alt="Постер баскетбол"
               />
-              <h2>Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
+              <h2 class="example">
+                Постер <span lang="en">New Orlean vs Golden Star</span>
+              </h2>
+              <p class="category-name">Дизайн</p>
             </a>
           </li>
 
           <li>
             <a href="">
               <img
-                width="370px"
-                height="294px"
+                width="370"
+                height="294"
                 src="images/seafood.jpg"
                 alt="Ресторан Морская еда"
               />
-              <h2>Ресторан Seafood</h2>
-              <p>Приложение</p>
+              <h2 class="example">Ресторан <span lang="en">Seafood</span></h2>
+              <p class="category-name">Приложение</p>
             </a>
           </li>
           <li>
             <a href="">
               <img
-                width="370px"
-                height="294px"
+                width="370"
+                height="294"
                 src="images/headphone.jpg"
                 alt="Наушники"
               />
-              <h2>Проект Prime</h2>
-              <p>Маркетинг</p>
+              <h2 class="example">Проект <span lang="en">Prime</span></h2>
+              <p class="category-name">Маркетинг</p>
             </a>
           </li>
 
           <li>
             <a href="">
               <img
-                width="370px"
-                height="294px"
+                width="370"
+                height="294"
                 src="images/boxes.jpg"
                 alt="Две коробки"
               />
-              <h2>Проект Boxes</h2>
-              <p>Приложение</p>
+              <h2 class="example">Проект <span lang="en">Boxes</span></h2>
+              <p class="category-name">Приложение</p>
             </a>
           </li>
           <li>
             <a href="">
               <img
-                width="370px"
-                height="294px"
+                width="370"
+                height="294"
                 src="images/monitor.jpg"
                 alt="Монитор"
               />
-              <h2>Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
+              <h2 lang="en" class="example">Inspiration has no Borders</h2>
+              <p class="category-name">Веб-сайт</p>
             </a>
           </li>
           <li>
             <a href="">
               <img
-                width="370px"
-                height="294px"
+                width="370"
+                height="294"
                 src="images/magazine.jpg"
                 alt="Журнал"
               />
-              <h2>Издание Limited Edition</h2>
-              <p>Дизайн</p>
+              <h2 class="example">
+                Издание <span lang="en"> Limited Edition</span>
+              </h2>
+              <p class="category-name">Дизайн</p>
             </a>
           </li>
           <li>
             <a href="">
               <img
-                width="370px"
-                height="294px"
+                width="370"
+                height="294"
                 src="images/lab-el-tag.jpg"
                 alt="Бирка"
               />
-              <h2>Проект LAB</h2>
-              <p>Маркетинг</p>
+              <h2 class="example">Проект <span lang="en">LAB</span></h2>
+              <p class="category-name">Маркетинг</p>
             </a>
           </li>
           <li>
             <a href="">
               <img
-                width="370px"
-                height="294px"
+                width="370"
+                height="294"
                 src="images/laptop.jpg"
                 alt="Ноутбук"
               />
-              <h2>Growing Business</h2>
-              <p>Приложение</p>
+              <h2 lang="en" class="example">Growing Business</h2>
+              <p class="category-name">Приложение</p>
             </a>
           </li>
         </ul>
@@ -179,8 +183,9 @@
       >
       <address>
         <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-        <a href="mailto:" class="footer-mail">info@example.com</a> <br />
-        <a href="tel:" class="footer-tel">+38 099 111 11 11</a>
+        <a href="mailto:" class="footer-mail mailtel">info@example.com</a>
+        <br />
+        <a href="tel:" class="footer-tel mailtel">+38 099 111 11 11</a>
       </address>
     </footer>
   </body>

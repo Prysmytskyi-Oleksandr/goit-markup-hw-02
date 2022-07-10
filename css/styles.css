@@ -10,7 +10,8 @@
     --primary-text-color:#757575;
     --title-text-color:#212121;
     --accent-color:#2196F3;
-    --white-color:#FFFFFF
+    --white-color:#FFFFFF;
+    --secondary-fone:#F5F4FA;
 }
 
 body {background-color:var(--white-color);
@@ -23,14 +24,21 @@ a{text-decoration: none;}
 
 .logo {
     color: #000000; font-family: Raleway, sans-serif;
-
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19px;
+    
 }
 
 .logo-accent{color:var(--accent-color) ;}
 
 /* Главная навигация */
 .site-nav .link {color:var(--title-text-color);
-
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .site-nav .link:hover, 
 .site-nav .link:focus {
@@ -38,7 +46,11 @@ a{text-decoration: none;}
     }
 
 /* контакты */
-.header-contact .mailtel {color: var(--primary-text-color);}
+.header-contact .mailtel {color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+   }
 .mailtel:hover,
 .mailtel:focus {color: var(--accent-color);}
 
@@ -46,23 +58,62 @@ a{text-decoration: none;}
 /* фон героя */
 .hero{background-color: #2F303A;}
 
-/* шрифт заголовков */
+/* шрифт заголовка Героя */
 .hero-title{color: var(--white-color);
-
-
-Font size: 44px
-Line height: 60px
-Line height: 116%
-Align: Center
-Vertical align: Top
-Letter spacing: 6%
+;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
-.section-title{color: var(--title-text-color)}
+
+/* кнопка Героя */
+.hero-button{background-color: var(--accent-color);
+color: var(--white-color);
+   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+
+.section-title{color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 
 /* Характеристика компании*/
-.properties-list .title{color: var(--title-text-color);}
+.properties-list .title{color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14x;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;}
+
+.properties-list .description{
+font-size: 14px;
+line-height: 1.7;
+}
+
+        
  /* Команда */
- .team .team-title {color: var(--title-text-color);}
+ .team .team-title {color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    }
+.team .position{
+       font-size: 16px;
+    line-height: 1.19;
+        }
 
  /* fotter */
  .footer{background-color:#2F303A ;}
@@ -72,3 +123,35 @@ Letter spacing: 6%
  .address{color:var(--white-color); font-style: normal;}
  
  .footer-mail, .footer-tel {color: rgba(255, 255, 255, 0.6); font-style: normal;}
+.footer-mail
+
+
+
+ /* PORTFOLIO */
+
+ /* filtr */
+ .hidden-title{display: none;}
+ .filtr .category{background-color: var(--secondary-fone);
+color: var(--title-text-color); cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+   }
+   .filtr .category:hover,
+   .filtr .category:focus{background-color: var(--accent-color);
+color: var(--white-color);}
+
+/* Галерея */
+.example{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2px;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+.category-name{font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);}
