@@ -5,6 +5,7 @@
 /* акцент #2196F3 */
 /* вторичный фон #F5F4FA */
 /* фон героя #2F303A */
+/* цвет лого - чорный #000000 */
 
 :root{
     --primary-text-color:#757575;
@@ -12,6 +13,9 @@
     --accent-color:#2196F3;
     --white-color:#FFFFFF;
     --secondary-fone:#F5F4FA;
+    --hero-fone:#2F303A;
+    --logo-black:#000000;
+    --hero-button:#188CE8;
 }
 
 body {background-color:var(--white-color);
@@ -20,10 +24,12 @@ ul{list-style: none;}
 a{text-decoration: none;}
 
 /* header */
+
+
 /* Логотип */
 
 .logo {
-    color: #000000; font-family: Raleway, sans-serif;
+    color: var(--logo-black); font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19px;
@@ -31,6 +37,8 @@ a{text-decoration: none;}
 }
 
 .logo-accent{color:var(--accent-color) ;}
+
+
 
 /* Главная навигация */
 .site-nav .link {color:var(--title-text-color);
@@ -41,9 +49,12 @@ a{text-decoration: none;}
     letter-spacing: 0.02em;
 }
 .site-nav .link:hover, 
-.site-nav .link:focus {
+.site-nav .link:focus
+ {
     color: var(--accent-color);
     }
+
+.site-nav .link.current{color: var(--accent-color);}
 
 /* контакты */
 .header-contact .mailtel {color: var(--primary-text-color);
@@ -56,7 +67,7 @@ a{text-decoration: none;}
 
 /* main */
 /* фон героя */
-.hero{background-color: #2F303A;}
+.hero{background-color:var(--hero-fone);}
 
 /* шрифт заголовка Героя */
 .hero-title{color: var(--white-color);
@@ -80,7 +91,8 @@ color: var(--white-color);
     text-align: center;
     letter-spacing: 0.06em;
 }
-
+.hero-button:hover,
+.hero-button:focus {background-color: var(--hero-button);}
 
 .section-title{color: var(--title-text-color);
     font-weight: 700;
@@ -116,7 +128,7 @@ line-height: 1.7;
         }
 
  /* fotter */
- .footer{background-color:#2F303A ;}
+ .footer{background-color:var(--hero-fone) ;}
  .logo-footer{color: var(--white-color); font-family: Raleway, sans-serif;}
  .logo-footer-web{color:var(--accent-color) ;}
 
@@ -131,7 +143,7 @@ line-height: 1.7;
 
  /* filtr */
  .hidden-title{display: none;}
- .filtr .category{background-color: var(--secondary-fone);
+ .filtr .category{font-family:inherit; background-color: var(--secondary-fone);
 color: var(--title-text-color); cursor: pointer;
     font-weight: 500;
     font-size: 16px;
