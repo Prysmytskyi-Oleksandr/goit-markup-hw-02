@@ -33,6 +33,7 @@ a{text-decoration: none;}
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19px;
+    letter-spacing: 0.03em;
     
 }
 
@@ -61,6 +62,7 @@ a{text-decoration: none;}
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
    }
 .mailtel:hover,
 .mailtel:focus {color: var(--accent-color);}
@@ -113,6 +115,7 @@ color: var(--white-color);
 .properties-list .description{
 font-size: 14px;
 line-height: 1.7;
+letter-spacing: 0.03em;
 }
 
         
@@ -121,21 +124,32 @@ line-height: 1.7;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    }
+    letter-spacing: 0.03em;}
 .team .position{
-       font-size: 16px;
+    font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
         }
 
  /* fotter */
  .footer{background-color:var(--hero-fone) ;}
- .logo-footer{color: var(--white-color); font-family: Raleway, sans-serif;}
+ .logo-footer{color: var(--white-color); font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;}
  .logo-footer-web{color:var(--accent-color) ;}
 
  .address{color:var(--white-color); font-style: normal;}
  
- .footer-mail, .footer-tel {color: rgba(255, 255, 255, 0.6); font-style: normal;}
-.footer-mail
+ .footer-mail, .footer-tel {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);}
+
 
 
 
@@ -149,6 +163,7 @@ color: var(--title-text-color); cursor: pointer;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    letter-spacing: 0.03em;
    }
    .filtr .category:hover,
    .filtr .category:focus{background-color: var(--accent-color);
